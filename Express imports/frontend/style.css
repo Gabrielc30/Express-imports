@@ -1,0 +1,60 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-blue {
+    background-color: #061C40;
+}
+
+.custom-blue-text {
+    color: #061C40;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #061C40 0%, #0A2A5C 100%);
+}
+
+.cart-slide-in {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-slide-in.active {
+    transform: translateX(0);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}

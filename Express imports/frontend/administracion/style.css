@@ -1,0 +1,63 @@
+body { 
+    font-family: 'Inter', sans-serif;
+}
+.custom-blue { 
+    background-color: #061C40;
+}
+.custom-blue-text { 
+    color: #061C40;
+}
+.custom-blue-secondary { 
+    background-color: #0A2A5C;
+}
+.gradient-bg { 
+    background: linear-gradient(135deg, #061C40 0%, #0A2A5C 100%);
+}
+.sidebar-item { 
+    transition: all 0.3s ease;
+}
+.sidebar-item:hover { 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-item.active { 
+    background-color: rgba(255, 215, 0, 0.2); 
+    border-right: 4px solid #FFD700;
+}
+.card-hover { 
+    transition: all 0.3s ease;
+}
+.card-hover:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); 
+}
+.metric-card { 
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+}
+.status-badge { 
+    font-size: 0.75rem; 
+    padding: 0.25rem 0.75rem; 
+    border-radius: 9999px; 
+    font-weight: 600;
+}
+.btn-primary { 
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+}
+.btn-primary:hover { 
+    background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%);
+}
+.table-row { 
+    transition: all 0.2s ease;
+}
+.table-row:hover { 
+    background-color: #f8fafc;
+}
+.mobile-menu { 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease;
+}
+.mobile-menu.active { 
+    transform: translateX(0);
+}
+.overlay { 
+    background-color: rgba(0, 0, 0, 0.5);
+}
