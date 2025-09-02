@@ -240,7 +240,7 @@ async function insertSampleProducts(connection) {
 }
 
 // Email configuration
-const transporter = nodemailer.createTransporter({
+const transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
@@ -430,7 +430,7 @@ app.post('/api/quotes', async (req, res) => {
 
     // Send email notification (optional)
     try {
-      await transporter.sendMail({
+      await transport.sendMail({
         from: process.env.EMAIL_USER,
         to: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
         subject: 'Nueva Solicitud de Cotización - Express Imports',
@@ -568,7 +568,7 @@ app.post('/api/stock-orders', async (req, res) => {
 
     // Send confirmation email
     try {
-      await transporter.sendMail({
+      await transport.sendMail({
         from: process.env.EMAIL_USER,
         to: customer_email,
         subject: 'Confirmación de Pedido - Express Imports',
